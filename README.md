@@ -99,7 +99,3 @@ App runs at: `http://localhost:5173`
 - [ ] Deploy to Render (backend) + Vercel (frontend)
 
 ---
-
-## 👨‍💻 Author
-
-Made with ❤️ by **Sumee**
