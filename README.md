@@ -114,7 +114,7 @@ App runs at: `http://localhost:5173`
 
 ## 👨‍💻 Author
 
-Made with ❤️ by **Sumee**
+Made with ❤️ by **Sumeet**
 ```
 
 ---
