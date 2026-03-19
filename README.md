@@ -9,19 +9,8 @@ A full-stack AI web app that analyzes the sentiment of any text — Positive, Ne
 
 ---
 
-## 🚀 Features
-
-- 🔍 Detects Positive, Negative, and Neutral sentiment
-- 📊 Shows polarity score and confidence %
-- ⚡ Fast REST API with FastAPI
-- 🎨 Clean React frontend
-- 🤖 Powered by TextBlob NLP
-
----
-
 ## 🗂️ Project Structure
-
-\`\`\`
+```
 sentiment-analyzer/
 ├── backend/
 │   ├── main.py
@@ -33,28 +22,28 @@ sentiment-analyzer/
     │   └── components/
     │       └── SentimentCard.jsx
     └── package.json
-\`\`\`
+```
 
 ---
 
 ## ⚙️ Setup & Run
 
 ### Backend
-\`\`\`bash
+```bash
 cd backend
 pip install -r requirements.txt
 python -m textblob.download_corpora
 uvicorn main:app --reload
-\`\`\`
-API runs at: `http://localhost:8000`
+```
+API runs at: `http://localhost:8000`  
 Swagger docs: `http://localhost:8000/docs`
 
 ### Frontend
-\`\`\`bash
+```bash
 cd frontend
 npm install
 npm run dev
-\`\`\`
+```
 App runs at: `http://localhost:5173`
 
 ---
@@ -72,11 +61,10 @@ App runs at: `http://localhost:5173`
 ## 🛠️ Tech Stack
 
 | Layer | Technology |
-|-------|-----------|
+|-------|------------|
 | Backend | FastAPI, Uvicorn |
 | NLP Model | TextBlob |
 | Frontend | React, Vite |
-| Styling | Inline CSS |
 
 ---
 
@@ -85,21 +73,21 @@ App runs at: `http://localhost:5173`
 ### `POST /analyze`
 
 **Request:**
-\`\`\`json
+```json
 {
   "text": "I love this project!"
 }
-\`\`\`
+```
 
 **Response:**
-\`\`\`json
+```json
 {
   "label": "Positive",
   "emoji": "😊",
   "score": 0.5,
   "confidence": 50.0
 }
-\`\`\`
+```
 
 ---
 
@@ -114,22 +102,4 @@ App runs at: `http://localhost:5173`
 
 ## 👨‍💻 Author
 
-Made with ❤️ by **Sumeet**
-```
-
----
-
-## 📁 .gitignore
-
-Create a `.gitignore` in the root folder:
-```
-# Python
-venv/
-__pycache__/
-*.pyc
-.env
-
-# Node
-node_modules/
-dist/
-.DS_Store
+Made with ❤️ by **Sumee**
