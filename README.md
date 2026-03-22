@@ -1,11 +1,22 @@
 # 🧠 Sentiment Analyzer
 
-A full-stack AI web app that analyzes the sentiment of any text — Positive, Negative, or Neutral — built with **FastAPI** and **React**.
+> Analyze the sentiment of any text — **Positive**, **Negative**, or **Neutral** — instantly!
+
+🌐 **Live Demo:** [sentiment-analyzer-cqzi.vercel.app](https://sentiment-analyzer-cqzi.vercel.app)
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-green)
-![React](https://img.shields.io/badge/React-18+-61DAFB)
+![React](https://img.shields.io/badge/React-19+-61DAFB)
 ![TextBlob](https://img.shields.io/badge/TextBlob-NLP-orange)
+
+---
+
+## ✨ Features
+
+- 🔍 Detects Positive, Negative and Neutral sentiment
+- 📊 Shows polarity score and confidence %
+- ⚡ Fast REST API with FastAPI
+- 🎨 Clean React frontend
 
 ---
 
@@ -28,23 +39,22 @@ sentiment-analyzer/
 
 ## ⚙️ Setup & Run
 
-### Backend
+### 1️⃣ Backend
 ```bash
 cd backend
 pip install -r requirements.txt
 python -m textblob.download_corpora
 uvicorn main:app --reload
 ```
-API runs at: `http://localhost:8000`  
-Swagger docs: `http://localhost:8000/docs`
+> API → `http://localhost:8000` | Docs → `http://localhost:8000/docs`
 
-### Frontend
+### 2️⃣ Frontend
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
-App runs at: `http://localhost:5173`
+> App → `http://localhost:5173`
 
 ---
 
@@ -71,16 +81,11 @@ App runs at: `http://localhost:5173`
 ## 📬 API Reference
 
 ### `POST /analyze`
-
-**Request:**
 ```json
-{
-  "text": "I love this project!"
-}
-```
+// Request
+{ "text": "I love this project!" }
 
-**Response:**
-```json
+// Response
 {
   "label": "Positive",
   "emoji": "😊",
@@ -91,11 +96,10 @@ App runs at: `http://localhost:5173`
 
 ---
 
-## 🔮 Future Improvements
+## 🔮 What's Next
 
 - [ ] Upgrade to HuggingFace Transformers for better accuracy
 - [ ] Add analysis history log
 - [ ] Add Tailwind CSS for better UI
-- [ ] Deploy to Render (backend) + Vercel (frontend)
 
 ---
