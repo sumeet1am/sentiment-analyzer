@@ -10,7 +10,7 @@ export default function App() {
     if (!text.trim()) return;
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:8000/analyze", {
+      const res = await fetch("https://sentiment-analyzer-api-v7sf.onrender.com/analyze", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text }),
